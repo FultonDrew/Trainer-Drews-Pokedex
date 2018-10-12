@@ -32,7 +32,7 @@ var pokemen = [];
 
 
 function initMetapod(i){
-		$.ajax({url:"http://fizal.me/pokeapi/api/v2/id/"+pokemenNumbers[i]+".json",
+		$.ajax({url:"https://fizal.me/pokeapi/api/v2/id/"+pokemenNumbers[i]+".json",
 	success: function(response){
 		var metapod =  new Pokemon(response)
 		pokemen.push(metapod)
